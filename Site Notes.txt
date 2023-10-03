@@ -1,0 +1,10 @@
+Main Font 
+Prata
+
+Secondary Font
+Roboto
+
+Color Codes
+#B4965D
+#064D22
+#F5F5F5
