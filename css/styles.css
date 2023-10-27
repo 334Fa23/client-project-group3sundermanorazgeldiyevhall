@@ -43,6 +43,14 @@ header {
   background-color: #064D22;
 }
 
+/* padding for sticky and content */
+/*
+.sticky + .content {
+  padding-top: 60px;
+}
+/* -------------------------------NEW------------------------- */
+
+
 .navbar {
   width: 100%;
   height: 60px;
@@ -52,6 +60,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
 
 /*LOGO*/
 
