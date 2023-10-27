@@ -1,4 +1,12 @@
-* {
+/*
+Authors: Didar Orazgeldiyev, Cameron Sunderman, Seth Hall
+Date:
+File Name: styles.css
+*/
+
+/* CSS Reset */
+
+body, header, li, a, footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +15,6 @@
 
 body {
   height: 50vh;
-  background-color: #064D22;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,6 +40,7 @@ a:hover {
 header {
   position: relative;
   padding: 0 2rem;
+  background-color: #064D22;
 }
 
 .navbar {
@@ -98,7 +106,7 @@ header {
   top: 60px;
   height: 0;
   width: unset;
-  background: rgba(255, 255,255, 0.1);
+  background: rgba(6, 77,34, 0.5);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
@@ -122,6 +130,117 @@ header {
   justify-content: center;
 }
 
+/*Style Rule for main area*/
+
+.hero {
+  width: 100%;
+  height: auto;
+}
+
+/* Style Rules for Index Page*/
+
+.team_logos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+}
+
+hr {
+  height: 1px;
+  width: 60%;
+  border-color: #B4965D;
+  color: #B4965D;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.welcome {
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.welcome h2 {
+  color: #064D22;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.welcome p {
+  color:#B4965D;
+  font-family: 'Roboto', serif;
+  line-height: 40px;
+  
+}
+
+/* Style Rules for Services page */
+
+.ground_transport {
+  margin: 50px auto;
+  display: block;
+  width: 70%;
+}
+
+.ground_transport img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.ground_transport h2 {
+  color:#064D22;
+  font-weight: 100;
+}
+
+.ground_transport h4 {
+  font-family: 'Roboto', serif;
+  font-weight: 100;
+  color: #B4965D;
+  letter-spacing: 2px;
+}
+
+.ground_transport p {
+  font-weight: 100;
+  color:#391400;
+  font-family: 'Roboto', serif;
+  line-height: 200%;
+}
+
+/* Style Rules for About page */
+
+.alex_bean {
+  margin: 50px auto;
+  display: block;
+  width: 70%;
+}
+
+.alex_bean img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.alex_bean h2 {
+  color:#064D22;
+  font-weight: 100;
+}
+
+.alex_bean h4 {
+  font-family: 'Roboto', serif;
+  font-weight: 100;
+  color:#064D22;
+  letter-spacing: 2px;
+}
+.alex_bean p {
+  font-weight: 100;
+  color:#B4965D;
+  font-family: 'Roboto', serif;
+  line-height: 200%;
+}
 /*Style Rules for Footer*/
 
 footer {
@@ -164,8 +283,6 @@ footer p {
       display: none;
   }
 
-
-
   .navbar .toggle_btn {
       display: block;
       width: 20px;
@@ -178,6 +295,7 @@ footer p {
   .dropdown_menu {
       display: block;
   }
+  
 } 
 
 @media(min-width: 1015px){
@@ -201,10 +319,27 @@ footer p {
     
   }
 
-  
+  /* Style Rule for Services Desktop*/
 
+  .ground_transport {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
+  .ground_transport h2, h4, p {
+    padding-left: 50px;
+  }
 
+  /* Style Rule for About USDesktop*/
+
+  .alex_bean {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .alex_bean h2, h4, p {
+    padding-left: 50px;
+  }
 
 }
 
