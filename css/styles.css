@@ -398,6 +398,7 @@ footer p {
 
   .dropdown_menu {
       display: block;
+      backdrop-filter: blur(15px);
   }
   
 } 
