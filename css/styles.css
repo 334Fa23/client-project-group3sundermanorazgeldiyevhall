@@ -21,6 +21,14 @@ body {
   padding-bottom: 40rem;
 }
 
+/* Style Rules for General */
+
+.br_img {
+  
+  width: 100%;
+  padding-bottom: 50px;
+}
+
 li {
   list-style: none;
 }
@@ -183,7 +191,7 @@ hr {
 /* Style Rules for Timeline*/
 
 .timeline {
-  max-width: 500px;
+  max-width: 50%;
   margin: auto;
   padding-left: 100px;
   padding-right: 100px;
@@ -412,6 +420,13 @@ footer p {
   .navbar .action_btn {
     display: flex;
     
+  }
+
+
+
+  .br_img {
+    padding-bottom: 100px;
+    margin-top: -100px;
   }
 
   /* Style Rule for Services Desktop*/
