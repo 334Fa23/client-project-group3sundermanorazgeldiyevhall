@@ -112,8 +112,8 @@ header {
 /*Dropdown menu*/
 
 
-.main-navigation:before,
-.main-navigation ul.sub-menu:before {
+.dropdown_menu:before,
+.dropdown_menu ul.sub-menu:before {
 backdrop-filter: blur(5px);
 content: “”;
 display: block;
@@ -124,7 +124,7 @@ left: 0;
 top: 0;
 }
 
-.main-navigation{
+.dropdown_menu1{
 position: relative;
 }
 
