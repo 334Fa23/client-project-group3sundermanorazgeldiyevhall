@@ -83,7 +83,7 @@ header {
 
 .action_btn {
   display: none;
-  background-color: none;
+  background-color: transparent;
   color: #fff;
   padding: 0.5rem 1rem;
   border: 0.75px solid #fff;
@@ -92,18 +92,14 @@ header {
   font-size: 0.8rem;
   /**font-weight: bold;**/
   cursor: pointer;
-  transition: scale 0.2 ease;
 }
 
 .action_btn:hover {
   background-color: #fff;
-  scale: 1.05;
   color: #B4965D;
 }
 
-.action_btn:active {
-  scale: 0.95;
-}
+
 
 /*Dropdown menu*/
 
@@ -182,6 +178,97 @@ hr {
   font-family: 'Roboto', serif;
   line-height: 40px;
   
+}
+
+/* Style Rules for Timeline*/
+
+.timeline {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.timeline h1 {
+  text-align: center;
+  color: #064D22;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+span {
+  font-family: 'Prata', serif;
+  color: #064D22;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.timeline p {
+  font-family: 'Roboto', serif;
+  color: #B4965D;
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #B4965d 0%, #B4965d 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  
+}
+
+/* Timeline Numbers */
+.timeline p:before {
+  content: counter(section);
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 1.25em;
+  width: 1.25em;
+  border-style: solid;
+  border-color: #B4965D;
+  background-color: white;
+  text-align: center;
+  font-family: 'Prata', serif;
+  line-height: 1.25em;
+  color: #064D22;
+  font-size: 1em;
+}
+/* odd number borders */
+.timeline p:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+
+.timeline p:nth-child(odd):before {
+  left: 100%; 
+  margin-left: -20px;
+}
+
+/* even number borders */
+.timeline p:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+
+.timeline p:nth-child(even):before {
+  right: 100%; 
+  margin-right: -20px;
+}
+
+/* handle first and last */
+
+.timeline p:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+.timeline p:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
 }
 
 /* Style Rules for Services page */
