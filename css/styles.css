@@ -183,7 +183,6 @@ hr {
 /* Style Rules for Timeline*/
 
 .timeline {
-  min-width: 300px;
   max-width: 500px;
   margin: auto;
   padding-left: 100px;
