@@ -110,24 +110,6 @@ header {
 
 
 /*Dropdown menu*/
-
-
-.dropdown_menu:before,
-.dropdown_menu ul.sub-menu:before {
-backdrop-filter: blur(5px);
-content: “”;
-display: block;
-height: 100%;
-width: 100%;
-position: absolute;
-left: 0;
-top: 0;
-}
-
-.dropdown_menu1{
-position: relative;
-}
-
 .dropdown_menu {
   
   display: block;
