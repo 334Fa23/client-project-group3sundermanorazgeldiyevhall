@@ -110,8 +110,8 @@ header {
 
 
 /*Dropdown menu*/
-
 .dropdown_menu {
+  
   display: block;
   position: absolute;
   right: 2rem;
@@ -121,6 +121,7 @@ header {
   width: unset;
   background: rgba(6, 77,34, 0.5);
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(100px);
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -404,6 +405,8 @@ footer p {
 
   .dropdown_menu {
       display: block;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
   }
 
   .br_img {
