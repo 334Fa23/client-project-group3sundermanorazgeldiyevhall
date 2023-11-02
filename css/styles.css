@@ -112,7 +112,7 @@ header {
   background-color: transparent;
   color: #fff;
   padding: 0.75rem 1rem;
-  border: none
+  border: none;
   outline: none;
   border-radius: 5px;
   /**font-weight: bold;**/
@@ -135,7 +135,6 @@ header {
   width: unset;
   background: rgba(6, 77,34, 0.5);
   backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(100px);
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -428,7 +427,6 @@ footer p {
   .dropdown_menu {
       display: block;
       backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
   }
 
   .br_img {
@@ -466,6 +464,9 @@ hr {
     width: 300px;
   }
   
+  .navbar {
+    align-items: center;
+  }
 
   .navbar .links {
     display: flex;
