@@ -40,6 +40,15 @@ p {
   padding-bottom: 50px;
 }
 
+
+
+
+
+
+
+
+
+
 /* Style Rules for Header and Navigation */
 
 li {
@@ -166,6 +175,16 @@ header {
   justify-content: center;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Style Rules for Index Page*/
 
 .team_logos {
@@ -200,6 +219,7 @@ hr {
 .timeline {
   max-width: 50%;
   margin: auto;
+  margin-bottom: 20em;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -211,7 +231,7 @@ hr {
   letter-spacing: 5px;
 }
 
-span {
+p span {
   font-family: 'Prata', serif;
   color: #064D22;
   font-size: 1.5rem;
@@ -284,6 +304,15 @@ span {
   border-bottom-left-radius:0;
 }
 
+
+
+
+
+
+
+
+
+
 /* Style Rules for Services page */
 
 .ground_transport {
@@ -318,6 +347,16 @@ span {
   line-height: 200%;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Style Rules for About page */
 
 .alex_bean {
@@ -351,18 +390,155 @@ span {
   line-height: 200%;
 }
 
+
+
+
+
+/* FAQS */
+.faqs_cont_main {
+  box-sizing: border-box;
+
+}
+.faqs_cont_main::before,
+.faqs_cont_main::after {
+  box-sizing: border-box;
+}
+
+.faqs_cont {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #064D22;
+  display: flex;
+  min-height: 100vh;
+}
+
+.faqs {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 48rem;
+}
+
+.faqs h1 {
+  text-align: center;
+  color: #064D22;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 2em;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #064D22;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 2em;
+  color: #B4965D;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #064D22;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #064D22;
+  border: 1px solid #064D22;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: #064D22;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Style Rules for Register Page page */
 
 /* Style Rules for Travel Packages */
 
 .travel_packages {
-  padding-top: 5rem;
+  margin-top: 0em;
+  padding-top: 1em;
+  padding-bottom: 0;
+  margin-bottom: 0;
   text-align: center;
 }
 .travel_packages h1 {
   color: #064D22;
   font-size: 2rem;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 .travel_packages p {
@@ -432,6 +608,7 @@ span {
 }
 
 .pricing .plan.popular {
+  margin: 2em auto;
   color: #064D22;
   border: 1.2px solid #B4965D;
   position: relative;
@@ -453,6 +630,10 @@ span {
 .pricing .plan:hover {
   box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
 }
+
+
+
+
 
 
 
@@ -493,7 +674,19 @@ footer p {
   color: #fff;
 }
 
- /*Media Query*/
+
+
+
+
+
+
+
+
+
+
+
+
+ /*Media Query for Tablet Viewport*/
  
 @media(min-width: 630px){
   .navbar .links,
@@ -537,8 +730,25 @@ hr {
   border-left: none;
   border-right: none;
 }
+
+.pricing .plan.popular {
+  margin: 0;
+  transform: scale(0.95);
+
+
+}
   
 } 
+
+
+
+
+
+
+
+
+
+ /*Media Query for Desktop Viewport*/
 
 @media(min-width: 1015px){
   a{
@@ -568,14 +778,10 @@ hr {
     
   }
 
-
-
   .br_img {
     padding-bottom: 100px;
     margin-top: -200px;
   }
-
-
 
   /* Style Rule for Services Desktop*/
 
@@ -590,6 +796,11 @@ hr {
   .alex_bean {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing .plan.popular {
+    margin: 0;
+    transform: scale(1.08);
   }
 
 
