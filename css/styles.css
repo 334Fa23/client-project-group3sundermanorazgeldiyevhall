@@ -29,6 +29,11 @@ p {
   box-sizing: border-box;
 }
 
+.hero {
+  width: 100%;
+  height: auto;
+}
+
 .br_img {
   
   width: 100%;
@@ -130,7 +135,8 @@ header {
   height: 0;
   width: unset;
   background: rgba(6, 77,34, 0.7);
-  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px)!important;
+        backdrop-filter: blur(15px)!important;
 
   /* Blur and Opacity
   background: rgba(6, 77,34, 0.5);
@@ -158,13 +164,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-/*Style Rule for main area*/
-
-.hero {
-  width: 100%;
-  height: auto;
 }
 
 /* Style Rules for Index Page*/
