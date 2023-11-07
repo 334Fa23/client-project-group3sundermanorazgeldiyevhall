@@ -27,6 +27,8 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', serif;
+
 }
 
 .hero {
@@ -55,13 +57,13 @@ li {
   list-style: none;
 }
 
-a {
+header a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
 }
 
-a:hover {
+header a:hover {
   color: #B4965D;
 }
 
@@ -194,6 +196,57 @@ header {
 hr {
   display: none;
 }
+
+
+
+
+/*NEW MAIN CONTENT STYLE RULE*/
+
+.welcome_container {
+  width: 95%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+
+.welcome_container p {
+  margin-top: 0;
+}
+
+.welcome_columns {
+  display: flex;
+  margin: 1em 0;
+}
+
+.welcome_col-bg a {
+  color: #e5e5e5;
+}
+
+.welcome_col-bg {
+  background-color: #064D22;
+  color: #fff;
+  padding: 1em;
+}
+
+/*
+img {
+  max-width: 100%;
+}
+*/
+
+.welcome_container h1 {
+  font-size: 3rem;
+  color: #064D22;
+}
+
+.welcome_container h1 span {
+  color: #B4965D;
+}
+
+
+
+
+
 
 .welcome {
   text-align: center;
@@ -397,7 +450,8 @@ p span {
 /* FAQS */
 .faqs_cont_main {
   box-sizing: border-box;
-
+  max-width: 85%;
+  margin: 0 auto;
 }
 .faqs_cont_main::before,
 .faqs_cont_main::after {
@@ -509,9 +563,10 @@ p span {
   will-change: opacity, max-height;
 }
 .accordion .accordion-content p {
+  color: #000;
   font-size: 1rem;
   font-weight: 300;
-  margin: 2em 0;
+  margin: 2em 2.5em;
 }
 
 
@@ -751,7 +806,7 @@ hr {
  /*Media Query for Desktop Viewport*/
 
 @media(min-width: 1015px){
-  a{
+  header a{
     display: block;
     padding: 0.8rem 0.8rem;
   }
