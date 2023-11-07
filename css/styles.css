@@ -13,6 +13,8 @@ body, header, li, ul, a, footer {
   font-family: 'Prata', serif;
 }
 
+/* General Style Rules */
+
 body {
   height: 50vh;
   background-size: cover;
@@ -21,13 +23,19 @@ body {
   padding-bottom: 40rem;
 }
 
-/* Style Rules for General */
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .br_img {
   
   width: 100%;
   padding-bottom: 50px;
 }
+
+/* Style Rules for Header and Navigation */
 
 li {
   list-style: none;
@@ -43,21 +51,11 @@ a:hover {
   color: #B4965D;
 }
 
-/* Header */
-
 header {
   position: relative;
   padding: 0 2rem;
   background-color: #064D22;
 }
-
-/* padding for sticky and content */
-/*
-.sticky + .content {
-  padding-top: 60px;
-}
-/* -------------------------------NEW------------------------- */
-
 
 .navbar {
   width: 100%;
@@ -68,9 +66,6 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
-
-/*LOGO*/
 
 .navbar .logo a {
   font-size: 1.5rem;
@@ -123,7 +118,8 @@ header {
   border: 0.75px solid #B4965D;
 }
 
-/*Dropdown menu*/
+/* Style Rules for dropdown menu*/
+
 .dropdown_menu {
   
   display: block;
@@ -133,8 +129,14 @@ header {
   top: 60px;
   height: 0;
   width: unset;
+  background: rgba(6, 77,34, 0.7);
+  backdrop-filter: blur(15px);
+
+  /* Blur and Opacity
   background: rgba(6, 77,34, 0.5);
   backdrop-filter: blur(15px);
+  */
+
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -144,13 +146,6 @@ header {
   height: 300px;
 }
 
-/* .dropdown_menu li {
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/
 .dropdown_menu .btn {
   width: 100%;
   display: flex;
@@ -360,16 +355,109 @@ span {
 
 /* Style Rules for Register Page page */
 
+/* Style Rules for Travel Packages */
 
-/* Style Rules for Travel Packages page */
-
-.travel_packages h2 {
+.travel_packages {
+  padding-top: 5rem;
   text-align: center;
-  font-family: 'Prata', serif;
-  color: #064D22;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
 }
+.travel_packages h1 {
+  color: #064D22;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.travel_packages p {
+  font-size: 1rem;
+  color:#B4965D;
+  font-family: 'Roboto', serif;
+  padding-bottom: 5rem;
+}
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 15rem;
+}
+.pricing .plan {
+  color: #537761;
+  border: 1px solid #E3D5B9;
+  background-color: #fff;
+  padding: 2.5rem;
+  margin: 12px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.pricing .plan h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.pricing .plan .price {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+.pricing .plan ul.features {
+  list-style-type: none;
+  text-align: left;
+}
+.pricing .plan ul.features li {
+  margin: 8px;
+  font-family: 'Roboto', serif;
+}
+.pricing .plan ul.features li .fas {
+  margin-right: 4px;
+}
+.pricing .plan ul.features li .fa-check-circle {
+  color: #B4965D;
+}
+.pricing .plan ul.features li .fa-times-circle {
+  color: #E3D5B9;
+}
+.pricing .plan button {
+  border: none;
+  width: 100%;
+  padding: 12px 35px;
+  margin-top: 1rem;
+  background-color: #fff;
+  border: 1.2px solid #B4965D;
+  color: #B4965D;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#popular_button{
+  background-color: #B4965D;
+  color: #fff;
+}
+
+.pricing .plan.popular {
+  color: #064D22;
+  border: 1.2px solid #B4965D;
+  position: relative;
+  transform: scale(1.08);
+}
+.pricing .plan.popular span {
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #B4965D;
+  border: 1.2px solid #B4965D;
+  padding: 4px 20px;
+  font-family: 'Roboto', serif;
+  font-size: 1rem;
+  border-radius: 7px;
+}
+.pricing .plan:hover {
+  box-shadow: 5px 7px 67px -28px rgba(0, 0, 0, 0.37);
+}
+
+
+
 
 
 
@@ -498,9 +586,6 @@ hr {
     grid-template-columns: 1fr 1fr;
   }
 
-  .ground_transport h2, h4, p {
-    padding-left: 50px;
-  }
 
   /* Style Rule for About USDesktop*/
 
@@ -509,9 +594,6 @@ hr {
     grid-template-columns: 1fr 1fr;
   }
 
-  .alex_bean h2, h4, p {
-    padding-left: 50px;
-  }
 
 }
 
