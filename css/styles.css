@@ -432,6 +432,8 @@ p span {
 
 /* Style Rules for About page */
 
+/* Meet The Team */
+
 .alex_bean {
   margin: 50px auto;
   display: block;
@@ -867,7 +869,7 @@ footer p {
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-form { max-width:420px; margin:50px auto; }
+form { max-width:420px; margin:50px auto;}
 
 .feedback-input {
   color:white;
@@ -915,22 +917,26 @@ textarea {
   color: #B4965D;}
 
 .info-box {
-  margin: auto;
-  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background: transparent;
-  border: 2px solid #B4965D;
 }
 
 .contact-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 1em 0;
+  padding: 1em;
+  margin: 1em auto;
   align-items: flex-start;
+  border: 1px solid #B4965D;
   
-  
-  background-color: blue;
+  background-color: #fff;
 }
+
+.subcontact-card {
+  width: 100%;
+}
+
 
 
 
