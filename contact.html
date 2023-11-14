@@ -44,10 +44,29 @@
     <main>
         <div id="hero"><img src="img/contact_hero.png" class="hero" alt="contact hero image"></div>
         
-        <!-- Column to set up page -->
-        <div class="contact-column">
+    <!-- Column to set up page -->
+      <div class="contact-column">
 
-          <!-- Contact Form -->
+        <!--NEW CODE For Contact form-->
+        <div class="container">
+          <form action="action_page.php">
+        
+            <label for="Email">Your Email</label>
+            <input type="text" id="Email" name="Email" placeholder="Your Email..">
+        
+            <label for="Subject">Subject</label>
+            <input type="text" id="Subject" name="Subject" placeholder="Subject..">
+        
+            <label for="Message">Subject</label>
+            <textarea id="message" name="message" placeholder="Message.." style="height:200px"></textarea>
+            
+
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+          
+          <!-- Contact Form 
           <div class="contact-form">
             <div class="contact-head">
               <h1>Get In Touch</h1>
@@ -64,7 +83,7 @@
             <div class="submit-button">
               <p>SUBMIT</p>
             </div>
-          </div>
+          </div> -->
 
           <!-- Bottom Information Section -->
           <div class="contact-info-row">
