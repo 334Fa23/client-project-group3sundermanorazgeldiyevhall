@@ -912,7 +912,25 @@ textarea {
 [type="submit"]:hover { 
   background:#fff;
   border: 1px solid #B4965D;
-color: #B4965D;}
+  color: #B4965D;}
+
+.info-box {
+  margin: auto;
+  width: 70%;
+  background: transparent;
+  border: 2px solid #B4965D;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1em 0;
+  align-items: flex-start;
+  
+  
+  background-color: blue;
+}
 
 
 
