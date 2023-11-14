@@ -895,21 +895,24 @@ textarea {
 }
 
 [type="submit"] {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 40%;
   background:#B4965D;
   border-radius:5px;
   border:0;
   cursor:pointer;
   color:white;
-  font-size:24px;
+  font-size:1rem;
   padding-top:10px;
   padding-bottom:10px;
   transition: all 0.3s;
   margin-top:-4px;
-  font-weight:700;
+  
 }
-[type="submit"]:hover { background:#CC4949; }
+[type="submit"]:hover { 
+  background:#fff;
+  border: 1px solid #B4965D;
+color: #B4965D;}
 
 
 
