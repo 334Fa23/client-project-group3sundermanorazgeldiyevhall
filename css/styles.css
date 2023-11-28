@@ -432,19 +432,27 @@ p span {
 
 /* Style Rules for About page */
 
+.team h1{
+  text-align: center;
+  color: #064D22;
+  margin: 5% auto;
+}
+
 /* Meet The Team */
 
 .alex_bean {
+  text-align: center;
   margin: 50px auto;
   display: block;
   width: 70%;
 }
 
 .alex_bean img {
+  border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
 }
 
 .alex_bean h2 {
@@ -471,6 +479,7 @@ p span {
 
 /* FAQS */
 .faqs_cont_main {
+  padding-top: 5rem;
   box-sizing: border-box;
   max-width: 85%;
   margin: 0 auto;
@@ -1068,6 +1077,7 @@ hr {
   /* Style Rule for About USDesktop*/
 
   .alex_bean {
+    text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
