@@ -917,24 +917,21 @@ textarea {
   color: #B4965D;}
 
 .info-box {
-  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: transparent;
+  padding-left: 16em;
+  padding-right: 16em;
+  padding-bottom: 8em;
 }
 
 .contact-card {
-  padding: 1em;
-  margin: 1em auto;
-  align-items: flex-start;
+  flex: 1;
+  margin: 0;
   border: 1px solid #B4965D;
-  
-  background-color: #fff;
 }
 
 .subcontact-card {
-  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Add border or styling as desired */
 }
 
 
