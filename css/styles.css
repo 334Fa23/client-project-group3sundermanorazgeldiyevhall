@@ -387,18 +387,36 @@ p span {
 
 
 /* Style Rules for Services page */
+/* Needs fixed for mobile */
 
 .ground_transport {
   margin: 50px auto;
   display: block;
-  width: 70%;
+  width: 100%;
+}
+
+.ground_transport_text{
+  text-align: justify;
+  vertical-align: middle;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 3%;
+}
+
+.ground_transport_text_left{
+  text-align: justify;
+  text-align-last: right;
+  vertical-align: middle;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 3%;
 }
 
 .ground_transport img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  height: auto;
+  margin: auto;
+  width: 90%;
 }
 
 .ground_transport h2 {
@@ -420,7 +438,13 @@ p span {
   line-height: 200%;
 }
 
-
+.explore{
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5%;
+  margin: auto;
+}
 
 
 
