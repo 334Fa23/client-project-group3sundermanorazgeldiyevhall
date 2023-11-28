@@ -916,6 +916,7 @@ textarea {
   border: 1px solid #B4965D;
   color: #B4965D;}
 
+/*css for cards on Services and Contact*/
 .info-box {
   display: flex;
   padding-left: 16em;
@@ -931,7 +932,7 @@ textarea {
 
 .subcontact-card {
   padding: 10px;
-  border: 1px solid #ccc; /* Add border or styling as desired */
+  border: 1px solid #ccc;
 }
 
 
