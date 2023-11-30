@@ -401,6 +401,11 @@ p span {
   line-height: 200%;
 }
 
+.spacer{
+  padding-bottom: 10%;
+}
+
+
 
 
 
@@ -457,7 +462,7 @@ p span {
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 8%;
   margin: auto;
 }
 
