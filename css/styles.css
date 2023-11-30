@@ -395,22 +395,16 @@ p span {
   width: 100%;
 }
 
+
 .ground_transport_text{
-  text-align: justify;
+  text-align: center;
   vertical-align: middle;
   padding-top: 5%;
   padding-bottom: 5%;
-  padding-right: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.ground_transport_text_left{
-  text-align: justify;
-  text-align-last: right;
-  vertical-align: middle;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 3%;
-}
 
 .ground_transport img {
   display: block;
@@ -425,6 +419,7 @@ p span {
 }
 
 .ground_transport h4 {
+
   font-family: 'Roboto', serif;
   font-weight: 100;
   color: #B4965D;
@@ -440,12 +435,23 @@ p span {
 
 .explore{
   text-align: center;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 5%;
   margin: auto;
 }
 
+.explore h2{
+  color: #064D22;
+  font-weight: 100;
+}
+
+.explore p {
+  font-weight: 100;
+  color:#391400;
+  font-family: 'Roboto', serif;
+  line-height: 200%;
+}
 
 
 
@@ -1097,8 +1103,60 @@ hr {
   /* Style Rule for Services Desktop*/
 
   .ground_transport {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+    display: block;
+    width: 100%;
+  }
+  
+  .ground_transport_text{
+    text-align: justify;
+    vertical-align: middle;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 3%;
+  }
+  
+  .ground_transport_text_left{
+    text-align: justify;
+    text-align-last: right;
+    vertical-align: middle;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+  }
+  
+  .ground_transport img {
+    display: block;
+    height: auto;
+    margin: auto;
+    width: 90%;
+  }
+  
+  .ground_transport h2 {
+    color:#064D22;
+    font-weight: 100;
+  }
+  
+  .ground_transport h4 {
+    font-family: 'Roboto', serif;
+    font-weight: 100;
+    color: #B4965D;
+    letter-spacing: 2px;
+  }
+  
+  .ground_transport p {
+    font-weight: 100;
+    color:#391400;
+    font-family: 'Roboto', serif;
+    line-height: 200%;
+  }
+  
+  .explore{
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    margin: auto;
   }
 
 
