@@ -286,13 +286,13 @@ img {
   line-height: 40px;
   
 }
-
+/* Style Rules for Events Page */
 /* Style Rules for Timeline*/
 
 .timeline {
   max-width: 50%;
   margin: auto;
-  margin-bottom: 20em;
+  margin-bottom: 8em;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -377,9 +377,29 @@ p span {
   border-bottom-left-radius:0;
 }
 
+.activities {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+}
 
+.activities h1{
+  color: #064D22;
+  font-weight: 100;
+}
 
+.activities h2{
+  color: #B4965D;
+  font-weight: 100;
+}
 
+.activities p{
+  font-weight: 100;
+  color:#391400;
+  font-family: 'Roboto', serif;
+  line-height: 200%;
+}
 
 
 
