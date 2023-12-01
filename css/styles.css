@@ -430,11 +430,11 @@ p span {
 }
 
 
-.ground_transport img {
+.ground_transport_img {
   display: block;
   height: auto;
   margin: auto;
-  width: 90%;
+  width: 50%;
 }
 
 .ground_transport h2 {
